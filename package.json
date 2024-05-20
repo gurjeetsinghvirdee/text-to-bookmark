@@ -1,5 +1,5 @@
 {
-  "name": "txt-to-bookmark",
+  "name": "text-to-bookmark",
   "version": "0.0.1",
   "description": "**text-to-bookmark** is a straightforward utility that converts plain text files containing URLs into bookmark HTML files. These HTML files are compatible with most web browsers, making it easy to import and manage bookmarks.",
   "bin": {

@@ -4,7 +4,7 @@ const createBookmarksHtml = require('./index');
 const [,, inputFile, outputFile] = process.argv;
 
 if (!inputFile || !outputFile) {
-    console.error('Usage: txt-to-bookmark <inputFile> <outputFile>');
+    console.error('Usage: text-to-bookmark <inputFile> <outputFile>');
     process.exit(1);
 }
 
