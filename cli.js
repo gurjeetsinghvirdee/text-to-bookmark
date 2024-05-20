@@ -25,7 +25,7 @@ const options = {
     style: 'default',
     metadata: {
         author: '',
-        date: new Date().toISOString()
+        date: '' // Empty string initially
     }
 };
 
@@ -38,9 +38,8 @@ args.slice(2).forEach(arg => {
     } else if (arg.startsWith('--author=')) {
         options.metadata.author = arg.split('=')[1];
     } else if (arg.startsWith('--date=')) {
-        // Parse the date string into a Date object and format it to YYYY-MM-DD
-        const dateStr = arg.split('=')[1];
-        options.metadata.date = format(new Date(dateStr), 'yyyy-MM-dd');
+        // Set the date directly without parsing or formatting
+        options.metadata.date = arg.split('=')[1];
     }
 });
 
