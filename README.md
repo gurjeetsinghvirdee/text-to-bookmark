@@ -54,8 +54,6 @@ Convert a text file to HTML bookmarks without any customization:
 text-to-bookmark links.txt bookmarks.html
 ```
 
-![Basic Conversion](https://github.com/gurjeetsinghvirdee/text-to-bookmark/blob/master/assests/examples/Basic%20Conversion.png)
-
 ## Customizing Title and Styling
 
 Customize the title and style of the HTML bookmarks:
@@ -65,8 +63,6 @@ text-to-bookmark links.txt bookmarks.html --title="My Bookmarks" --style="minima
 ```
 
 
-![Title & Styling](https://github.com/gurjeetsinghvirdee/text-to-bookmark/blob/master/assests/examples/Title%20%26%20Styling.png)
-
 ## Adding Metadata
 
 Add author and creation date metadata to the HTML bookmarks:
@@ -75,14 +71,6 @@ Add author and creation date metadata to the HTML bookmarks:
 text-to-bookmark links.txt bookmarks.html --author="John Doe" --date="2024-05-31"
 ```
 
-![Adding Metadata](https://github.com/gurjeetsinghvirdee/text-to-bookmark/blob/master/assests/examples/Adding%20Metadat.png)
-
 ## License
 
 This project is licensed under the **MIT License** - see the LICENSE file for details.
-
-## Maintainer
-
-This project is maintained by [Gurjeet Singh Virdee](mailto:gurjeetsinghvirdee@gmail.com). Feel free to reach out if you have any questions or feedback.
-
-⭐ If you find this tool useful, don't forget to star the repository! ⭐
