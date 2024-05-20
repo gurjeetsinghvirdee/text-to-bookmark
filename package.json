@@ -11,5 +11,8 @@
   },
   "keywords": [],
   "author": "Gurjeet Singh Virdee",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^3.6.0"
+  }
 }
