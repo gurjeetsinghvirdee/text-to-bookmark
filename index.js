@@ -1,5 +1,4 @@
 const fs = require('fs');
-const { format } = require('date-fns');
 
 function createBookmarksHtml(inputFile, outputFile, options) {
     const links = fs.readFileSync(inputFile, 'utf8').split('\n');
@@ -31,8 +30,7 @@ function createBookmarksHtml(inputFile, outputFile, options) {
     fs.writeFileSync(outputFile, htmlContent, 'utf8');
 }
 
-// Function to generate custom styles 
-
+// Function to generate custom styles
 function getCustomStyles(style) {
     switch (style) {
         case 'default':
@@ -184,8 +182,8 @@ function getCustomStyles(style) {
 function generateMetadata(metadata) {
     let metadataHtml = '';
     if (metadata) {
-        if (metadata.creationDate) {
-            metadataHtml += `<p>Creation Date: ${format(metadata.creationDate, 'yyyy-MM-dd')}</p>`;
+        if (metadata.date) {
+            metadataHtml += `<p>Creation Date: ${metadata.date}</p>`;
         }
         if (metadata.author) {
             metadataHtml += `<p>Author: ${metadata.author}</p>`;
