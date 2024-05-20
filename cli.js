@@ -10,4 +10,3 @@ if (!inputFile || !outputFile) {
 
 createBookmarksHtml(inputFile, outputFile);
 console.log(`Bookmarks have been generated and saved to ${outputFile}`);
-

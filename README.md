@@ -13,7 +13,7 @@
 
 To use this package, you need to have Node.js installed on your system. Then, you can install the package globally using npm:
 
-```pwsh
+```bash
 npm install -g txt-to-bookmark
 ```
 
@@ -21,7 +21,7 @@ npm install -g txt-to-bookmark
 
 After installing the package, you can use the txt-to-bookmark command in your terminal to convert a text file to HTML format. Here's the basic syntax:
 
-```pwsh
+```bash
 txt-to-bookmark <input-file> <output-file>
 ```
 
@@ -39,7 +39,7 @@ https://example.com/page3
 
 To convert this text file to HTML bookmarks, you can run the following command:
 
-```pwsh
+```bash
 txt-to-bookmark links.txt bookmarks.html
 ```
 
@@ -47,4 +47,8 @@ This will generate an HTML file named bookmarks.html containing bookmarks for ea
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the **MIT License** - see the LICENSE file for details.
+
+## Maintainer
+
+This project is maintained by [Gurjeet Singh Virdee](mailto:gurjeetsinghvirdee@gmail.com). Feel free to reach out if you have any questions or feedback.
