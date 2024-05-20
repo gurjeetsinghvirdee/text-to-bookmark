@@ -181,15 +181,17 @@ function getCustomStyles(style) {
 }
 
 // Function to generate metadata HTML based on metadata option
-
 function generateMetadata(metadata) {
-    if (!metadata) return '';
-    let metaContent = '<div class="metadata">\n';
-    if (metadata.author) metaContent += `<p><strong>Author:</strong> ${metadata.author}</p>\n`;
-    if (metadata.date) metaContent += `<p><strong>Creation Date:</strong> ${metadata.date}</p>\n`;
-    metaContent += '</div>\n';
-    
-    return metaContent;
+    let metadataHtml = '';
+    if (metadata) {
+        if (metadata.creationDate) {
+            metadataHtml += `<p>Creation Date: ${format(metadata.creationDate, 'yyyy-MM-dd')}</p>`;
+        }
+        if (metadata.author) {
+            metadataHtml += `<p>Author: ${metadata.author}</p>`;
+        }
+    }
+    return metadataHtml;
 }
 
 module.exports = createBookmarksHtml;

@@ -37,7 +37,8 @@ args.slice(2).forEach(arg => {
     } else if (arg.startsWith('--author=')) {
         options.metadata.author = arg.split('=')[1];
     } else if (arg.startsWith('--date=')) {
-        options.metadata.date = arg.split('=')[1];
+        // Parse the date string into a Date object
+        options.metadata.date = new Date(arg.split('=')[1]);
     }
 });
 
