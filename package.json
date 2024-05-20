@@ -1,18 +1,25 @@
 {
   "name": "text-to-bookmark",
   "version": "0.0.4",
-  "description": "**text-to-bookmark** is a straightforward utility that converts plain text files containing URLs into bookmark HTML files. These HTML files are compatible with most web browsers, making it easy to import and manage bookmarks.",
+  "description": "A utility to convert text files containing URLs into HTML bookmark files",
+  "main": "index.js",
   "bin": {
     "text-to-bookmark": "./cli.js"
   },
-  "main": "index.js",
+  "files": [
+    "index.js",
+    "cli.js",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Gurjeet Singh Virdee",
+  "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "date-fns": "^3.6.0"
+    "date-fns": "^2.21.1"
   }
 }

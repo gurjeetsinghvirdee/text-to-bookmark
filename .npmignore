@@ -1,0 +1,14 @@
+# Ignore node_modules
+node_modules
+
+# Ignore assets folder
+assets/
+
+# Ignore other common files and directories
+.DS_Store
+.vscode
+.idea
+coverage
+dist
+build
+.env
