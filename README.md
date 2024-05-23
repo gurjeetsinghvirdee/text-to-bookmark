@@ -109,6 +109,6 @@ text-to-bookmark links.txt bookmarks.html --author="John Doe" --date="2024-05-31
 
 ## License
 
-This project is licensed under the **MIT License** - see the LICENSE file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
 
-**Note:** Customization options like style, author, and date may not reflect in web browsers as they override the default styles. While customization options like style, author, and date may not reflect in web browsers as they override the default styles, feel free to use them to create bookmarks that look good and function as intended. Future updates may address this limitation.
+**Note:** While customization options like style, author, and date may not reflect in web browsers as they override the default styles, feel free to use them to create bookmarks that look good and function as intended. Future updates may address this limitation.
