@@ -25,7 +25,7 @@ const options = {
     style: 'default',
     metadata: {
         author: '',
-        date: '' // Empty string initially
+        date: format(new Date(), 'yyyy-MM-dd') // Correctly format the date
     }
 };
 
@@ -38,10 +38,21 @@ args.slice(2).forEach(arg => {
     } else if (arg.startsWith('--author=')) {
         options.metadata.author = arg.split('=')[1];
     } else if (arg.startsWith('--date=')) {
-        // Set the date directly without parsing or formatting
-        options.metadata.date = arg.split('=')[1];
+        const providedDate = arg.split('=')[1];
+        // Validate and format the provided date
+        const parsedDate = new Date(providedDate);
+        if (!isNaN(parsedDate)) {
+            options.metadata.date = format(parsedDate, 'yyyy-MM-dd');
+        } else {
+            console.error(`Invalid date format: ${providedDate}`);
+            process.exit(1);
+        }
     }
 });
 
-createBookmarksHtml(inputFile, outputFile, options);
-console.log(`Bookmarks have been generated and saved to ${outputFile}`);
+createBookmarksHtml(inputFile, outputFile, options)
+    .then(() => console.log(`Bookmarks have been generated and saved to ${outputFile}`))
+    .catch(err => {
+        console.error(`Error generating bookmarks: ${err.message}`);
+        process.exit(1);
+    });

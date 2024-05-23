@@ -1,6 +1,6 @@
 {
   "name": "text-to-bookmark",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A utility to convert text files containing URLs into HTML bookmark files",
   "main": "index.js",
   "bin": {
